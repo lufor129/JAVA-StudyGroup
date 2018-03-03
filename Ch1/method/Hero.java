@@ -9,8 +9,8 @@ public class Hero {
 
 	// 實例化一個對象時會調動建構方法，默認（）自動產生
 	Hero() {
-		// System.out.println("hello");
-		// this("Sombra");
+//		 this("Sombra");
+//		 System.out.println("hello");	 
 	}
 
 	// 當有非（）建構，默認不會有（）自動產生
