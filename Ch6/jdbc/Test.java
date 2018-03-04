@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.sql.ResultSet;
 
 public class Test {
 	public static void main(String[] args) {
@@ -36,6 +37,7 @@ public class Test {
 			String sql = "insert into hero values(null," + "'Reaper'" + "," + 250 + "," + 70 + ")";
 			s.execute(sql);
 			System.out.println("done");
+			
 		} catch (ClassNotFoundException e) {
 		} catch (SQLException e) {
 			e.getSQLState();
