@@ -18,6 +18,8 @@ public class Test2 {
 		System.out.println(odm.get(6).name);
 		
 		
+		ej.search();
+		
 		
 	}
 }
