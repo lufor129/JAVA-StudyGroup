@@ -38,6 +38,8 @@ public class Test2 {
 						synchronized (number) {
 							System.out.println("已完成: " + number.incrementAndGet());
 						}
+					}else {
+						System.out.println(testIP+" 不可連接");
 					}
 				}
 			});
@@ -59,8 +61,18 @@ public class Test2 {
 			Process p=Runtime.getRuntime().exec("ping -n 1 "+ip);
 			BufferedReader br =new BufferedReader(new InputStreamReader(p.getInputStream()));
 			String line=null;
-			String 
-		}catch(IOException e) {}
+			StringBuilder sb=new StringBuilder();
+			while((line=br.readLine())!=null) {
+				if(line.length()!=0)
+					sb.append(line+"\r\n");
+			}
+			
+			reachable =sb.toString().contains("TTL");
+			br.close();
+			return reachable;
+		}catch(IOException e) {
+			return false;
+		}
 
 	}
 }
