@@ -2,6 +2,6 @@ package socket;
 
 public class Dictionary {
 	int id;
-	int recieve;
-	int response;
+	String recieve;
+	String response;
 }
