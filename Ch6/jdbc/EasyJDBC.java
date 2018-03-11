@@ -20,7 +20,7 @@ public class EasyJDBC {
 
 	public void execute(String sql) {
 		try (Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8",
-				"root", "admin"); Statement s = c.createStatement();) {
+				"root", "s2007tyu"); Statement s = c.createStatement();) {
 
 			s.execute(sql);
 			System.out.println("done");
@@ -74,7 +74,7 @@ public class EasyJDBC {
 
 	public void list(int start, int count) {
 		try (Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8",
-				"root", "admin"); Statement s = c.createStatement();) {
+				"root", "s2007tyu"); Statement s = c.createStatement();) {
 
 			String sql = "select * from limit " + start + "," + count;
 			ResultSet rs = s.executeQuery(sql);
@@ -96,7 +96,7 @@ public class EasyJDBC {
 
 		String sql = "insert into hero value(null,?,?,?)";
 		try (Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8",
-				"root", "admin"); PreparedStatement ps = c.prepareStatement(sql);) {
+				"root", "s2007tyu"); PreparedStatement ps = c.prepareStatement(sql);) {
 
 			// 事後設定
 			ps.setString(1, "Orisa");
@@ -121,7 +121,7 @@ public class EasyJDBC {
 
 	public void Compare() {
 		try (Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8",
-				"root", "admin"); Statement s = c.createStatement();) {
+				"root", "s2007tyu"); Statement s = c.createStatement();) {
 			String sql = "select * from hero";
 			s.execute(sql);
 			ResultSet rs = s.getResultSet();
@@ -149,7 +149,7 @@ public class EasyJDBC {
 	// 刪除前10條，會問Y/N
 	public void revise() {
 		try (Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8",
-				"root", "admin"); Statement Query = c.createStatement(); Statement Delete = c.createStatement();) {
+				"root", "s2007tyu"); Statement Query = c.createStatement(); Statement Delete = c.createStatement();) {
 			Scanner sc = new Scanner(System.in);
 			// 關閉自動提交，有事務的前提下多操作要馬成功躍馬失敗
 			c.setAutoCommit(false);

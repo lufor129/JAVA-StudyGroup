@@ -22,7 +22,7 @@ public class OrmDaoModel {
 	public Hero get(int id) {
 		Hero hero = null;
 		try (Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8",
-				"root", "admin"); Statement s = c.createStatement();) {
+				"root", "s2007tyu"); Statement s = c.createStatement();) {
 
 			String sql = "select * from hero where id = " + id;
 			ResultSet rs = s.executeQuery(sql);

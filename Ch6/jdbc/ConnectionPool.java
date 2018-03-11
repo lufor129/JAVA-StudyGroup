@@ -41,7 +41,7 @@ public class ConnectionPool {
 
 			for (int i = 0; i < size; i++) {
 				Connection c = DriverManager
-						.getConnection("jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8", "root", "admin");
+						.getConnection("jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8", "root", "s2007tyu");
 				cd.add(c);
 			}
 

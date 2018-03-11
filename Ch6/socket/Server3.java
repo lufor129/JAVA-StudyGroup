@@ -1,17 +1,34 @@
 package socket;
 
+import java.io.DataInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.io.InputStream;
-import java.io.DataInputStream;
-
+ 
 public class Server3 {
-	
-	public static void main(String[] args) {
-		try {
-			
-		}catch()
-		
-	}
+ 
+    public static void main(String[] args) {
+        try {
+ 
+            ServerSocket ss = new ServerSocket(8888);
+ 
+            System.out.println("監聽端口號:8888");
+            Socket s = ss.accept();
+ 
+            InputStream is = s.getInputStream();
+ 
+            DataInputStream dis = new DataInputStream(is);
+            //使用readUTF讀取數據
+            String msg = dis.readUTF();
+            System.out.println(msg);
+            dis.close();
+            s.close();
+            ss.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+ 
+    }
 }

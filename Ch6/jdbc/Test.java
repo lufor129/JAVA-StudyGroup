@@ -27,7 +27,7 @@ public class Test {
 
 			// Connect with Mysql
 			c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/how2java?characterEncoding=UTF-8", "root",
-					"admin");
+					"s2007tyu");
 			System.out.println(c);
 
 			// 建立Statement對象來使用SQL語句
