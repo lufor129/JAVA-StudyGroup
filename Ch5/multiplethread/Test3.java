@@ -146,6 +146,15 @@ public class Test3 {
 //		練習: 
 //		讓t1,t2,t3彼此死鎖
 //		同步對象分別為 a,b,c
-
+		
+//		超進階:查查看(reflection)
+//		當我們在靜態(類)方法上面加上synchronized時，他們互相搶奪的麥克風是指哪個對象?
+//		已知靜態(類)方法不需要實例化就能執行。
+//		public Hero{
+//			public static synchronized hurt() {
+//				hp=hp-1;
+//			}
+//		}
+//		Hero.hurt();
 	}
 }
