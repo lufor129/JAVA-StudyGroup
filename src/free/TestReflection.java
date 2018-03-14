@@ -17,6 +17,34 @@ public class TestReflection {
 		};
 		t2.setName("第二個線程");
 		t2.start();
+		
+		t1.join();
+		t2.join();
+		System.out.println("要第一個執行完才會執行第二個線程");
 	}
 	
+	public static void method1() {
+		synchronized(TestReflection.class) {
+//			對method1來說同步對象是TestReflection類對象
+//			印出當前對象名稱
+			System.out.println(Thread.currentThread().getName());
+			try {
+				System.out.println("執行五秒");
+				Thread.sleep(5000);
+			}catch(InterruptedException e) {
+				
+			}
+		}
+	}
+	
+	public static synchronized void method2() {
+//		和method1同樣的效果，用TestReflection作為同步對象
+		System.out.println(Thread.currentThread().getName());
+		try {
+			System.out.println("執行五秒");
+			Thread.sleep(5000);
+		}catch(InterruptedException e) {
+			
+		}
+	}
 }
