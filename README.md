@@ -12,13 +12,13 @@ Ch5: Lambda表示式，stream應用，聚合操作，多線程，同步，交互
 Ch6: 數據庫、Swing、socket、自動回話機器人、互動聊天、反射  
 src: 補充(慢慢更新)  
   
-# 把project 放入eclipse的方法:  
+### 把project 放入eclipse的方法:  
 1. 把JAVA project clone 下來，並放入eclipse-workspace中  
 2. 打開eclipse 點選左上角file 找到並點選 import 
 3. 展開General 並找到 Existing project into workspace 點選後按next  
 4. select root dictionary，browse 檔案 按下finish  
 
-# 亂碼:   
+### 亂碼:   
 1. 點Window 找到Preference  
 2. 展開General 找到 Workspace 
 3. 找到Textfile encoding 改為 Other: UTF-8  
