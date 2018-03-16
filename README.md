@@ -10,7 +10,7 @@ JAVA-106下學期
 + Ch4: 集合、ArrayList、LinkedList、Collection、泛型  
 + Ch5: Lambda表示式，stream應用，聚合操作，多線程，同步，交互，生產者消費者模型，線程池  
 + Ch6: 數據庫、Swing、socket、自動回話機器人、互動聊天、反射  
-+ src: 補充(慢慢更新)  
++ src: 開發中...    
   
 ### 把project 放入eclipse的方法:
 *****
