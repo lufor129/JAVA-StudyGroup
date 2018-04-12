@@ -56,7 +56,7 @@ public class Test5 {
 //			try {
 //				Thread.sleep(sleeptime);
 //				if (sleeptime > 0) {
-//					sleeptime -= 50;
+//					sleeptime -= 100;
 //				}
 //			} catch (InterruptedException e) {
 //			}

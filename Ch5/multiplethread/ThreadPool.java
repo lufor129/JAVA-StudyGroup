@@ -24,6 +24,7 @@ public class ThreadPool {
 	}
 
 	class TaskConsumeThread extends Thread {
+		
 		public TaskConsumeThread(String name) {
 			super(name);
 		}
