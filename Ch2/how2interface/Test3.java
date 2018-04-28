@@ -12,7 +12,7 @@ public class Test3 {
 		// 多個父建構時至少會調用一個，默認為默認父建構 "public Hero()"
 
 		new OHero();
-
+		
 		// 要調用有參，使用super
 		// new OHero();
 

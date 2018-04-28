@@ -4,7 +4,7 @@ public class Test4 {
 	public static void main(String[] agrs) {
 
 		/*-------abstract修飾 -------------*/
-		// 像是extends和implements的結合，不展開了 (考試會考，要看書)
+		// 像是extends和implements的結合，不展開了 (考試會考，看書)
 		// 注意 寫抽象方法 要在 抽象類中 ，抽象類是無法實例化的
 
 		/*------匿名類 和 本地類-----------------*/

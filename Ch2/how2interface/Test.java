@@ -15,7 +15,7 @@ public class Test {
 		h = Genji;
 		// 等同於Hero h=new OHero();
 
-		// 2.父轉子(向下) 不可，要強制轉
+		// 2.父轉子(向下) 不可，要強制轉，把NOKIA3316 當成智慧手機用有點困難
 
 		// Genji=h;
 		Genji = (OHero) h;
@@ -30,11 +30,11 @@ public class Test {
 		// 4.接口向下 要強轉 要是多個接口，則不能轉
 
 		SHero sh = (SHero) s1;
-		
+
 		// 下面會出錯，執行看看 畢竟support不能使用skillattack
 		OSHero os = (OSHero) s2;
 		os.skillattack();
 		os.heal();
-		
+
 	}
 }

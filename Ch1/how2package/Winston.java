@@ -14,7 +14,7 @@ public class Winston {
 
 	// 私有化建構式，使外界無法訪問
 	private Winston() {
-
+		
 	}
 
 	// 準備靜態屬性，用於指向實例化對象，但暫時指向null
@@ -27,5 +27,16 @@ public class Winston {
 		}
 		return Boss;
 	}
-
+	
+	public void getName() {
+		System.out.println(this.name);
+	}
+	
+	public void checkhp() {
+		System.out.println(this.hp);
+	}
+	
+	public void hurtWistom(int damage) {
+		this.hp-=damage;
+	}
 }

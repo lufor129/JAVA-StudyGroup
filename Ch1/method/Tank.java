@@ -18,7 +18,6 @@ public class Tank extends Hero {
 	public void attack(Hero h1) {
 		System.out.println(name + " attack " + h1.name);
 		// this.attack();
-
 	}
 
 	public void attack(Hero h1, Hero h2) {

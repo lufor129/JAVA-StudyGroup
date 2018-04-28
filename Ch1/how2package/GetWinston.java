@@ -15,5 +15,9 @@ public class GetWinston {
 		System.out.println(w1);
 		System.out.println(w2);
 		System.out.println(w3);
+		
+		
+		w1.getName();
+
 	}
 }

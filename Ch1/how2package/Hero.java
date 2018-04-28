@@ -93,12 +93,12 @@ public class Hero {
 		System.out.println("you win ");
 	}
 
-	// 在靜態方法中調用動態方法
-	// public static void useWeapon() {
-	// Weapon hammer=new Weapon();
-	// hammer.damage=100;
-	//
-	// this.equip(hammer);
-	// }
+//	 在靜態方法中調用動態方法
+	 public static void useWeapon() {
+	 Weapon hammer=new Weapon();
+	 hammer.damage=100;
+	
+//	 this.equip(hammer);
+	 }
 
 }

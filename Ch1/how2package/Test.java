@@ -9,7 +9,7 @@ public class Test {
 		Mccree.copyright = "Blizzard Entertainment";
 
 		System.out.println(Mccree.copyright);
-		// System.out.println(Reaper.copyright);
+		System.out.println(Reaper.copyright);
 
 		// 如果一個屬性，每個英雄都不一樣，比如name，這樣的屬性就應該設計為物件屬性，因為它是跟著物件走的，每個物件的name都是不同的
 		//
@@ -22,7 +22,7 @@ public class Test {
 		// 2.Hero.battleWin();
 		// 建議用2 更符合特性
 
-		// Hero.battleWin();
+		 Hero.battleWin();
 	}
 
 }

@@ -3,13 +3,13 @@ package method;
 public class Relife extends Hero {
 
 	Relife(String name, int hp, int damage) {
-		super.name = name;
-		super.hp = hp;
-		super.damage = damage;
+		this.name=name;
+		this.hp=hp;
+		this.damage=damage;
 	}
 
-	void revive(Hero h) {
-		h = new Hero(h.name, 200, 40);
+	Hero revive(Hero h) {
+		return new Hero(h.name, 200, 30);
 	}
 
 	public static void main(String[] args) {
@@ -22,10 +22,10 @@ public class Relife extends Hero {
 			if (s76.hp <= 0)
 				break;
 		}
+		
+		s76=mercy.revive(s76);
 
-		mercy.revive(s76);
-
-		// System.out.println(s76.damage);
+		System.out.println(s76.damage);
 	}
 
 }

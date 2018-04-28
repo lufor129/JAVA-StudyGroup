@@ -13,6 +13,7 @@ public class Hero {
 	
 	public Hero() {
 		System.out.println("Hero 的建構式");
+		
 	}
 	
 	public Hero(String name) {
@@ -22,7 +23,7 @@ public class Hero {
 	public boolean equals(Object o) {
 //		如果o的class是Hero
 		if(o instanceof Hero) {
-//			電腦無法判段 o是否為 Hero要加上這段
+//			電腦無法判段 o是否為 Hero需要加上這段
 			Hero h=(Hero)o;
 			return this.hp == h.hp;
 		}
