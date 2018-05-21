@@ -15,9 +15,9 @@ JAVA-106下學期
 ### 把project 放入eclipse的方法:
 *****
 1. 把JAVA project clone 下來，並放入eclipse-workspace中  
-2. 打開eclipse 點選左上角file 找到並點選 import 
-3. 展開General 並找到 Existing project into workspace 點選後按next  
-4. select root dictionary，browse 檔案 按下finish  
+2. 打開eclipse 點選左上角file 找到並點選 new -> java porject 
+3. Project Name 打上 JAVA-StudyGroup 點擊 next
+4. 點選 Libraries 後 remove mysql-connector 然後 finish
 
 ### 亂碼:
 ***** 
